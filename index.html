@@ -1,0 +1,174 @@
+<!DOCTYPE html><!--Указывает на то, что документ html-->
+<html><!--Главный тег html-->
+<head><!--В head находятся описание сайта и подключения-->
+	<meta charset="UTF-8"><!--Кодировка страницы-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Требуется для отображение на смартфонах-->
+	<title>Современные игровые приставки</title><!--Заголовок в браузере-->
+	<link rel="stylesheet" href="css/style.css"><!--Подключение стилей-->
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400&display=swap" rel="stylesheet"><!--Подключение гугл шрифта-->
+	<link rel="shortcut icon" href="img/icon.ico" type="image/x-icon"><!--Иконка-->
+	<script type="text/javascript" src="js/script.js"></script>
+</head>
+<body><!--Тело документа-->
+<div id="header"><!--Блок шапки-->
+	<div id="logo">
+   		<a href="index.html">Modern consoles</a><!--Ссылка и логотип-->
+   	</div>
+   	<nav id="menu"><!--Блок навигации-->
+	    <ul>
+	     <li><a href="index.html">Главная</a></li><!--Элемент списка, меню-->
+	     <li><a href="news.html">Новости</a></li>
+	     <li><a href="reviews.html">Обзоры</a></li>
+	     <li><a href="consoles.html">Консоли</a></li>
+	     <li><a href="contacts.html">Контакты</a></li>
+	    </ul>
+   </nav>
+</div>
+<div class="container"><!--элемент от bootstrap, для хранения информации-->
+<div class="row justify-content-md-center">
+	<div class="col-12 col-md-9 align-self-center">
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+		    <div class="numbertext">1 / 3</div>
+		    <img src="img/ps5.jpg" style="width:100%">
+		    <div class="text"><script language="JavaScript">
+				days()
+			</script><!--Использование функции из скрипта--></div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">2 / 3</div>
+		    <img src="img/ps5_2.jpg" style="width:100%">
+		    <div class="text"><script language="JavaScript">
+				days()
+			</script></div>
+		  </div>
+
+		  <div class="mySlides fade">
+		    <div class="numbertext">3 / 3</div>
+		    <img src="img/ps5_3.jpg" style="width:100%">
+		    <div class="text"><script language="JavaScript">
+				days()
+			</script></div>
+		  </div>
+
+		  <!-- Кнопки вперед и назад -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- Круглые кнопки -->
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span>
+		  <span class="dot" onclick="currentSlide(2)"></span>
+		  <span class="dot" onclick="currentSlide(3)"></span>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/slider.js"></script>
+</div>
+	<h2>Свежие новости</h2><!--Заголовок 2 уровня-->
+	<div class="row"><!--элемент от bootstrap, строка-->
+		<div class="col-md-7"><!--элемент от bootstrap, колонка md, Сайт делится на 12 колонок, значение 7 значит, этот блок на экране монитора ноутбука отображается при соотношеннии 7 к 12, col-sm-12 означал бы, что на экране смартфона будет отображаться на всю ширину-->
+			<a href="news/four.html" class="news_a"><!--ссылка-->
+			<div class="news_block"><!--новостной блок-->
+			    <h3>Sony будет улучшать систему охлаждения PlayStation 5 обновлениями прошивки</h3>
+			    <p class="time">20.10.2020</p>
+			    <img src="img/ps5.png" alt="">
+			    <p>В начале октября Sony показала геймерам внутренности PlayStation 5. Оказалось, что консоль охлаждает один 45-миллиметровый вентилятор. Теперь же инженер PS5 Ясухиро Оотори рассказал, как компания собирается улучшать работу системы охлаждения после релиза консоли.</p>
+			</div>
+			</a>
+		</div>
+		<div class="col-md-5"><!--элемент от bootstrap, выше был md-7, сответственно md-7 + md-5 дадут md-12, то есть на всю ширину-->
+			<div class="row"><!--элемент от bootstrap, нужен для использования колонок col-->
+				<div class="col-12"><!--на всю ширину-->
+					<a href="news/three.html" class="news_a">
+						<div class="mini_news_block">
+						<h3>Sony запустит новый PlayStation Store: что изменится для владельцев PlayStation 4</h3>
+				            <p class="time">16.10.2020</p>
+				            <p>Еще на прошлой неделе появились слухи, что Sony планирует запустить новый PlayStation Store без поддержки старых консолей.</p>
+				        </div>
+					</a>
+				</div>
+				<div class="col-12">
+					<a href="news/two.html" class="news_a">
+						<div class="mini_news_block">
+						<h3>Без Halo обойдемся: Microsoft раскрыла стартовую линейку игр Xbox Series X из 30 проектов</h3>
+				            <p class="time">15.10.2020</p>
+				            <p>Microsoft не успеет выпустить Halo Infinite к выходу Xbox Series X и Series S. Из-за трудностей в разработке, 343 Industries пришлось перенести релиз на 2021 год, но и без этого геймерам будет во что поиграть.</p>
+				        </div>
+					</a>
+				</div>
+				<div class="col-12">
+					<a href="news/one.html" class="news_a">
+						<div class="mini_news_block">
+						<h3>Sony показала интерфейс PlayStation 5: первый взгляд на «Активности», «Центр управления» и многое другое</h3>
+				            <p class="time">14.10.2020</p>
+				            <p>Sony опубликовала новый выпуск State of Play, показав геймерам интерфейс PlayStation 5.</p>
+				        </div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>	
+	<h2>Обзоры</h2>
+	<div class="row">
+		<div class="col-md-6">
+			<a href="reviews/three.html" class="reviews">
+			<div class="reviews_block">
+			    <h3>Сравнение XBOX Series X и XBOX Series S — все различия в одном обзоре</h3>
+			</div>
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="reviews/two.html" class="mini_reviews">
+			<div class="mini_reviews_block">
+			    <img src="img/ps5xbox.png" alt="">
+			    <p class="time">22.10.2020</p>  
+			    <h3>Обзор сравнения PlayStation 5 и XBOX Series — Все подробности</h3>
+			</div>
+			</a>
+		</div>
+		<div class="col-md-3">
+			<a href="reviews/one.html" class="mini_reviews">
+			<div class="mini_reviews_block">
+			    <img src="img/gamepad.png" alt="">
+			    <p class="time">20.10.2020</p>
+			    <h3>Как подключить геймпад Microsoft XBOX One к ПК и какой выбрать</h3>  
+			</div>
+			</a>
+		</div>
+	</div>
+</div>
+<div class="container-fluid" id="footer"><!--элемент от bootstrap, container fluid значит, что блок растягивается на всю ширину страницы-->
+   <div class="row">
+   	<div class="col-md-2 align-self-center"><!--элемент от bootstrap, align-self-center центрировать по вертикали-->
+   		<ul>
+	     <li><a href="index.html">Главная</a></li>
+	     <li><a href="news.html">Новости</a></li>
+	     <li><a href="reviews.html">Обзоры</a></li>
+	    </ul>
+   	</div>
+   	<div class="col-md-2 align-self-center">
+	    <ul>
+	   	<li><a href="consoles.html">Консоли</a></li>
+	     <li><a href="contatcs.html">Контакты</a></li>
+	     </ul>
+   	</div>
+   	<div class="col-md-4 align-self-center">
+   		&copy;2020г.<br>
+   	Все права защищены.
+   	</div>
+   	<div class="col-md-4 align-self-center">
+   		Соц.сети:<br>
+   	<a href="#"><img src="img/vk.png" alt=""></a>
+   	<a href="#"><img src="img/facebook.png" alt=""></a>
+   	<a href="#"><img src="img/instagram.png" alt=""></a>
+   	</div>
+   </div>
+</div>
+</body>
+</html>
